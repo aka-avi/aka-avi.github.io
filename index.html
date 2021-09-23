@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Coming Soon | Avinash Bharti </title>
+	<meta charset="utf-8">
+	<meta name="viweport" content="width=device-width, initial-scale=1.0">
+	<title>Avinash Bharti</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		<div class="hero">
-			<p>Creating something amazing</p>
-			<h1>Coming Soon</h1>
+			<p>PHP Full Stack Developer</p>
+			<h1>Avinash Bharti</h1>
 			<hr>
-			<p id="launch"></p>
+			<h2><a href="https://www.avinashbharti.com" target="_blank">Visit Site</a></h2>
 		</div>
 	</header>
-
-	<script type="text/javascript">
-		var countDownDate = new Date("sep 23, 2021 00:00:00").getTime();
-
-		var x = setInterval(function(){
-
-			var now = new Date().getTime();
-
-			var distance = countDownDate - now;
-
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / (1000));
-
-			document.getElementById("launch").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-			if (distance < 0){
-				clearInterval(x);
-				document.getElementById("launch").innerHTML = "Expired";
-			}
-		}, 1000);
-
-	</script>
 </body>
 </html>
